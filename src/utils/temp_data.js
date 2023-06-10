@@ -1,0 +1,248 @@
+import moment from "moment";
+
+export const driverInfor = [
+  {
+    id: 1,
+    grandPrix: "Bahrain",
+    date: moment("05 Mar 2023"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING HONDA RBPT",
+    laps: 57,
+    time: "1:33:56.736",
+  },
+  {
+    id: 2,
+    grandPrix: "Saudi Arabia",
+    date: moment("19 Mar 2023"),
+    winner: "Sergio Perez",
+    car: "RED BULL RACING HONDA RBPT",
+    laps: 50,
+    time: "1:21:14.894",
+  },
+  {
+    id: 3,
+    grandPrix: "Australia",
+    date: moment("02 Apr 2023"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING HONDA RBPT",
+    laps: 58,
+    time: "2:32:38.371",
+  },
+  {
+    id: 4,
+    grandPrix: "Azerbaijan",
+    date: moment("30 Apr 2023"),
+    winner: "Sergio Perez",
+    car: "RED BULL RACING HONDA RBPT",
+    laps: 51,
+    time: "1:32:42.436",
+  },
+  {
+    id: 5,
+    grandPrix: "Miami",
+    date: moment("07 May 2023"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING HONDA RBPT",
+    laps: 57,
+    time: "1:27:38.241",
+  },
+  {
+    id: 6,
+    grandPrix: "Monaco",
+    date: moment("28 May 2023"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING HONDA RBPT",
+    laps: 78,
+    time: "1:48:51.980",
+  },
+  {
+    id: 7,
+    grandPrix: "Spain",
+    date: moment("04 Jun 2023"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING HONDA RBPT",
+    laps: 66,
+    time: "1:27:57.940",
+  },
+];
+
+export const driverInfor2022 = [
+  {
+    id: 1,
+    grandPrix: "Bahrain",
+    date: moment("20 Mar 2022"),
+    winner: "Charles Leclerc",
+    car: "FERRARI",
+    laps: 57,
+    time: "1:37:33.584",
+  },
+  {
+    id: 2,
+    grandPrix: "Saudi Arabia",
+    date: moment("27 Mar 2022"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING RBPT",
+    laps: 50,
+    time: "1:24:19.293",
+  },
+  {
+    id: 3,
+    grandPrix: "Australia",
+    date: moment("10 Apr 2022"),
+    winner: "Charles Leclerc",
+    car: "FERRARI",
+    laps: 58,
+    time: "1:27:46.548",
+  },
+  {
+    id: 4,
+    grandPrix: "Emilia Romagna",
+    date: moment("24 Apr 2022"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING RBPT",
+    laps: 63,
+    time: "1:32:07.986",
+  },
+  {
+    id: 5,
+    grandPrix: "Miami",
+    date: moment("08 May 2022"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING RBPT",
+    laps: 57,
+    time: "1:34:24.258",
+  },
+  {
+    id: 6,
+    grandPrix: "Spain",
+    date: moment("22 May 2022"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING RBPT",
+    laps: 66,
+    time: "1:37:20.475",
+  },
+  {
+    id: 7,
+    grandPrix: "Monaco",
+    date: moment("29 May 2022"),
+    winner: "Sergio Perez",
+    car: "RED BULL RACING RBPT",
+    laps: 64,
+    time: "1:56:30.265",
+  },
+  {
+    id: 8,
+    grandPrix: "Azerbaijan",
+    date: moment("12 Jun 2022"),
+    winner: "Max Verstappen",
+    car: "RED BULL RACING RBPT",
+    laps: 51,
+    time: "1:34:05.941",
+  },
+];
+
+export const teamInfor2023 = [
+  {
+    id: "1",
+    name: "RED BULL RACING HONDA RBPT",
+    points: 287,
+  },
+  {
+    id: "2",
+    name: "MERCEDES",
+    points: 152,
+  },
+  {
+    id: "3",
+    name: "ASTON MARTIN ARAMCO MERCEDES",
+    points: 134,
+  },
+  {
+    id: "4",
+    name: "FERRARI",
+    points: 100,
+  },
+  {
+    id: "5",
+    name: "ALPINE RENAULT",
+    points: 40,
+  },
+  {
+    id: "6",
+    name: "MCLAREN MERCEDES",
+    points: 17,
+  },
+  {
+    id: "7",
+    name: "HAAS FERRARI",
+    points: 8,
+  },
+  {
+    id: "8",
+    name: "ALFA ROMEO FERRARI",
+    points: 8,
+  },
+  {
+    id: "9",
+    name: "ALPHATAURI HONDA RBPT",
+    points: 2,
+  },
+  {
+    id: "10",
+    name: "WILLIAMS MERCEDES",
+    points: 1,
+  },
+];
+
+export const teamInfor2022 = [
+  {
+    id: "1",
+    name: "RED BULL RACING HONDA RBPT",
+    points: 759,
+  },
+  {
+    id: "2",
+    name: "MERCEDES",
+    points: 515,
+  },
+  {
+    id: "3",
+    name: "ASTON MARTIN ARAMCO MERCEDES",
+    points: 134,
+  },
+  {
+    id: "4",
+    name: "FERRARI",
+    points: 554,
+  },
+  {
+    id: "5",
+    name: "ALPINE RENAULT",
+    points: 173,
+  },
+  {
+    id: "6",
+    name: "MCLAREN MERCEDES",
+    points: 159,
+  },
+  {
+    id: "7",
+    name: "HAAS FERRARI",
+    points: 55,
+  },
+  {
+    id: "8",
+    name: "ALFA ROMEO FERRARI",
+    points: 37,
+  },
+  {
+    id: "9",
+    name: "ALPHATAURI HONDA RBPT",
+    points: 35,
+  },
+  {
+    id: "10",
+    name: "WILLIAMS MERCEDES",
+    points: 5,
+  },
+];

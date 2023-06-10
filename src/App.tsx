@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DriverResult from "./Components/DriverResult/DriverResult";
+import LineChart from "./Components/LineChart/LineChart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container min-h-screen px-20 bg-gray-200">
+      <div className="p-10 bg-white h-full">
+        <div className="">
+          <DriverResult></DriverResult>
+        </div>
+      </div>
     </div>
   );
 }
