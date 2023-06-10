@@ -26,14 +26,13 @@ import LineChart from "../LineChart/LineChart";
 const DriverResult: React.FC = () => {
   const [searchText, setSearchText] = useState("");
   const [data, setData] = useState<IDrvierInfor[]>();
-  const [filterProps, setFilterProps] = useState<IDrvierFilter>({
-    year: "2023",
-  });
+  const [filterProps, setFilterProps] = useState<IDrvierFilter>();
   const [teamsInfor, setTeamInfor] = useState<ITeam[]>([]);
-  const [racesInfor, setraceInfor] = useState<IDrvierInfor[]>([]);
+  const [racesInfor, setraceInfor] = useState<IDrvierInfor[]>(driverInfor);
+  const [year, setYear] = useState("2023");
 
   useEffect(() => {
-    switch (filterProps?.year) {
+    switch (year) {
       case "2023":
         setraceInfor(driverInfor);
         setTeamInfor(teamInfor2023);
@@ -48,10 +47,14 @@ const DriverResult: React.FC = () => {
         break;
     }
     filterDriverResult();
-  }, [searchText, filterProps]);
+  }, [year]);
+
+  useEffect(() => {
+    filterDriverResult();
+  }, [searchText, driverInfor, teamsInfor, filterProps]);
 
   const filterDriverResult = () => {
-    let filterdData = racesInfor.filter((item, index) => {
+    let filterdData = racesInfor?.filter((item, index) => {
       const textFilter = searchText
         ? item.grandPrix.toLowerCase().includes(searchText?.toLowerCase()) ||
           item.car.toLowerCase().includes(searchText?.toLowerCase()) ||
@@ -129,11 +132,14 @@ const DriverResult: React.FC = () => {
     });
   };
   const handleChange = (value: string, prop: string) => {
-    console.log(`selected ${value}`);
-    setFilterProps({
-      ...filterProps,
-      [prop]: value,
-    });
+    if (prop !== "year") {
+      setFilterProps({
+        ...filterProps,
+        [prop]: value,
+      });
+    } else {
+      setYear(value);
+    }
   };
 
   return (
@@ -148,6 +154,7 @@ const DriverResult: React.FC = () => {
             style={{ width: 120 }}
             onChange={(value) => handleChange(value, "year")}
             options={[{ value: "2023" }, { value: "2022" }]}
+            value={year}
           />
         </Row>
         <Row gutter={[16, 16]}>
